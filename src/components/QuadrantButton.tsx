@@ -12,7 +12,7 @@ const QuadrantButton = ({ key, sound, children }: QuadrantButtonProps) => {
   const playSound = (soundFile: string) => {
     if (!soundFile) return;
     const audio = new Audio(soundFile);
-    audio.play();
+    void audio.play();
   };
 
   return (
